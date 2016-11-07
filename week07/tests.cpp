@@ -9,6 +9,44 @@
 
 using namespace std;
 
+/*
+     ___   .___________.___________. _______ .__   __. .___________. __    ______   .__   __.
+    /   \  |           |           ||   ____||  \ |  | |           ||  |  /  __  \  |  \ |  |
+   /  ^  \ `---|  |----`---|  |----`|  |__   |   \|  | `---|  |----`|  | |  |  |  | |   \|  |
+  /  /_\  \    |  |        |  |     |   __|  |  . `  |     |  |     |  | |  |  |  | |  . `  |
+ /  _____  \   |  |        |  |     |  |____ |  |\   |     |  |     |  | |  `--'  | |  |\   |
+/__/     \__\  |__|        |__|     |_______||__| \__|     |__|     |__|  \______/  |__| \__|
+
+
+You will NOT be editing this file. Don't do it. Write everything in your source code file.
+Do not read past line 70 unless you are VERY comfortable with functions.
+
+ */                                                                                            
+
+// These are the functions defined in this file
+bool testMyMax();
+bool testMyMin();
+bool testMyAbs();
+bool testMyFabs();
+bool testModInt();
+bool testModDouble();
+bool testMyIsUpper();
+bool testMyIsLower();
+bool testMyIsDigit();
+bool testMyIsAlpha();
+bool testMyIsAlnum();
+bool testMyToUpper();
+bool testMyToLower();
+bool testFlEq();
+bool testRandRange();
+bool testFindCharBegin();
+bool testFindStringBegin();
+bool testFindChar();
+bool testFindString();
+void runAllTests();
+
+
+// These are the functions you are going to make:
 int myMax(int, int);
 int myMin(int, int);
 int myAbs(int);
@@ -28,6 +66,10 @@ int findCharBegin(string, char);
 int findStringBegin(string, string);
 int findChar(string, char, int);
 int findString(string, string, int);
+
+
+
+
 
 
 bool testMyMax() {
@@ -53,19 +95,19 @@ bool testMyMax() {
 
 bool testMyMin() {
     cout << "Beginning tests on myMin... ";
-    if (myMax(1, 2) != 1) {
+    if (myMin(1, 2) != 1) {
         return false;
-    } else if (myMax(2, 1) != 1) {
+    } else if (myMin(2, 1) != 1) {
         return false;
-    } else if (myMax(2000000000, -1) != -1) {
+    } else if (myMin(2000000000, -1) != -1) {
         return false;
-    } else if (myMax(-1 ,2000000000) != -1) {
+    } else if (myMin(-1 ,2000000000) != -1) {
         return false;
-    } else if (myMax(0, 0) != 0) {
+    } else if (myMin(0, 0) != 0) {
         return false;
-    } else if (myMax(5, 5) != 5) {
+    } else if (myMin(5, 5) != 5) {
         return false;
-    } else if (myMax(-5, -5) != -5) {
+    } else if (myMin(-5, -5) != -5) {
         return false;
     }
     cout << "All tests completed successfully." << endl;
