@@ -401,7 +401,3 @@ void runAllTests() {
         cout << "findString function failed. Stopping..." << endl;
     }
 }
-
-int main() {
-    runAllTests();
-}
