@@ -161,8 +161,8 @@ bool testModInt() {
 bool testModDouble() {
     cout << "Beginning tests on modDouble... ";
     double largePrime = 99991.0;
-    for (double i = 0.1; i < 100000.0; i += 0.1) {
-        if (modDouble(largePrime, i) != fmod(largePrime, i)) {
+    for (double i = 1.0; i < 100000.0; i += 0.1) {
+        if (fabs(modDouble(largePrime, i) - fmod(largePrime, i)) > 0.01) {
             return false;
         }
     }
