@@ -195,7 +195,7 @@ bool testMyToLower() {
 bool testMyIsUpper() {
     cout << "Beginning tests on myIsUpper... ";
     for (char c = 0; c < 127; ++c) {
-        if ((myIsUpper(c) && isupper(c)) || (!myIsUpper(c) && !isupper(c))) {
+        if ((myIsUpper(c) || isupper(c)) && (!myIsUpper(c) || !isupper(c))) {
             return false;
         }
     }
@@ -206,7 +206,7 @@ bool testMyIsUpper() {
 bool testMyIsLower() {
     cout << "Beginning tests on myIsLower... ";
     for (char c = 0; c < 127; ++c) {
-        if ((myIsLower(c) && islower(c)) || (!myIsLower(c) && !islower(c))) {
+        if ((myIsLower(c) || islower(c)) && (!myIsLower(c) || !islower(c))) {
             return false;
         }
     }
@@ -217,7 +217,7 @@ bool testMyIsLower() {
 bool testMyIsDigit() {
     cout << "Beginning tests on myIsDigit... ";
     for (char c = 0; c < 127; ++c) {
-        if ((myIsDigit(c) && isdigit(c)) || (!myIsDigit(c) && !isdigit(c))) {
+        if ((myIsDigit(c) || isdigit(c)) && (!myIsDigit(c) || !isdigit(c))) {
             return false;
         }
     }
@@ -228,7 +228,7 @@ bool testMyIsDigit() {
 bool testMyIsAlpha() {
     cout << "Beginning tests on myIsAlpha... ";
     for (char c = 0; c < 127; ++c) {
-        if ((myIsAlpha(c) && isalpha(c)) || (!myIsAlpha(c) && !isalpha(c))) {
+        if ((myIsAlpha(c) || isalpha(c)) && (!myIsAlpha(c) || !isalpha(c))) {
             return false;
         }
     }
@@ -239,7 +239,7 @@ bool testMyIsAlpha() {
 bool testMyIsAlnum() {
     cout << "Beginning tests on myIsAlnum... ";
     for (char c = 0; c < 127; ++c) {
-        if ((myIsAlnum(c) && isalnum(c)) || (!myIsAlnum(c) && !isalnum(c))) {
+        if ((myIsAlnum(c) || isalnum(c)) && (!myIsAlnum(c) || !isalnum(c))) {
             return false;
         }
     }
