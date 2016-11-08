@@ -415,10 +415,6 @@ void runAllTests() {
         cout << "modInt function failed. Stopping..." << endl;
     } else if (!testModDouble()) {
         cout << "modDouble function failed. Stopping..." << endl;
-    } else if (!testMyToUpper()) {
-        cout << "myToUpper function failed. Stopping..." << endl;
-    } else if (!testMyToLower()) {
-        cout << "myToLower function failed. Stopping..." << endl;
     } else if (!testMyIsUpper()) {
         cout << "myToUpper function failed. Stopping..." << endl;
     } else if (!testMyIsLower()) {
@@ -429,6 +425,10 @@ void runAllTests() {
         cout << "myIsAlpha function failed. Stopping..." << endl;
     } else if (!testMyIsAlnum()) {
         cout << "myIsAlnum function failed. Stopping..." << endl;
+    } else if (!testMyToUpper()) {
+        cout << "myToUpper function failed. Stopping..." << endl;
+    } else if (!testMyToLower()) {
+        cout << "myToLower function failed. Stopping..." << endl;
     } else if (!testFlEq()) {
         cout << "flEq function failed. Stopping..." << endl;
     } else if (!testRandRange()) {
